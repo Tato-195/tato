@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Pai!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #B00020;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #B00020;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem;
+    }
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .block.reverse {
+      flex-direction: row-reverse;
+    }
+    .block img {
+      width: 200px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .text {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+    .heart {
+      font-size: 3rem;
+      color: #B00020;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #B00020;
+      color: white;
+      font-weight: bold;
+    }
+    .play-button {
+      display: block;
+      margin: 1rem auto;
+      background-color: #B00020;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgmusic" loop>
+    <source src="rocky.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <button class="play-button" onclick="document.getElementById('bgmusic').play()">▶️ Tocar música</button>
+
+  <header>
+    <h1>Feliz Aniversário, Pai!</h1>
+    <p>De Tato para Roberto Alonso, o pai mais incrível do mundo.</p>
+  </header>
+
+  <div class="container">
+    <div class="block">
+      <img src="pai1.jpg" alt="Pai">
+      <div class="text">Pai, eu te amo muito. Hoje é o seu dia, e eu não podia deixar passar em branco. Em vez de um simples vídeo ou mensagem, quis fazer algo mais pessoal, algo que mostrasse nem que fosse só 1% do meu amor por você.</div>
+      <div class="heart">❤️</div>
+    </div>
+
+    <div class="block reverse">
+      <img src="pai2.jpg" alt="Pai">
+      <div class="text">Você é um homem incrível: trabalhador, honesto e cheio de amor por mim. Tenho um orgulho enorme em te chamar de pai. Obrigado por ser meu herói todos os dias.</div>
+      <div class="heart">❤️</div>
+    </div>
+
+    <div class="block">
+      <img src="pai3.jpg" alt="Pai">
+      <div class="text">Eu sei que vai chegar o dia em que serei eu quem vai cuidar de você, mas por enquanto, só quero te agradecer e te dizer: feliz aniversário, pai! Te amo com toda a força do meu coração.</div>
+      <div class="heart">❤️</div>
+    </div>
+
+    <div class="block reverse">
+      <img src="pai4.jpg" alt="Pai">
+      <div class="text">Essa homenagem é só uma pequena amostra do quanto você é importante pra mim. Te amo demais, e desejo que seu dia seja tão incrível quanto você é pra mim!</div>
+      <div class="heart">❤️</div>
+    </div>
+  </div>
+
+  <footer>
+    De Tato para o melhor pai do mundo: Roberto Alonso ❤
+  </footer>
+</body>
+</html>
